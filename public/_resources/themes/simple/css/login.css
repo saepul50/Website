@@ -1,0 +1,210 @@
+.container-fluid {
+    height: 600px;
+}
+
+img {
+    width: 12%;
+}
+
+.input-group {
+    position: relative;
+    margin: auto;
+    width: 100%;
+}
+
+.input-group .input {
+    font-size: 100%;
+    width: 100%;
+    border: none;
+    padding: 1% 0;
+    background-color: transparent;
+    outline: none;
+}
+
+.label {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    color: #ccc;
+    transition: all 0.3s ease;
+    pointer-events: none;
+    transform: translateY(-50%);
+}
+
+.input-group .input:focus~.label,
+.input-group .input:valid~.label {
+    transform: translateY(-170%);
+    color: #333;
+    font-size: 12px;
+}
+
+.underlined {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 1%;
+    width: 100%;
+    background-color: #333;
+    transform: scaleY(1);
+    transition: transform 0.3s ease;
+}
+
+.input-group .input:focus~.underlined,
+.input-group .input:valid~.underlined {
+    transform: scaleY(1.8);
+}
+
+.input-group .check {
+    font-size: 12px;
+}
+
+.button .btn {
+    border-radius: 5px;
+}
+
+.password-container {
+    position: relative;
+}
+
+.password-container .input {
+    padding-right: 40px;
+}
+
+.password-container .eye-icon {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    z-index: 10;
+}
+
+/* From Uiverse.io by abrahamcalsin */
+.spinnerout{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.45);
+    z-index: 999;
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+.spinnerin{
+    position: absolute;
+    display: flex;
+    z-index: 1000;
+    top: 40%;
+    left: 50%;
+    transform: translateY(-50%);
+    transform: translateX(-50%);
+}
+.dot-spinner {
+    --uib-size: 4rem;
+    --uib-speed: .9s;
+    --uib-color: #cd0101;
+    position: relative;
+    filter: drop-shadow(0px 0px 10px white);
+    /* display: none; */
+    height: var(--uib-size);
+    width: var(--uib-size);
+}
+
+.dot-spinner__dot {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    height: 100%;
+    width: 100%;
+}
+
+.dot-spinner__dot::before {
+    content: '';
+    height: 20%;
+    width: 20%;
+    border-radius: 50%;
+    background-color: var(--uib-color);
+    transform: scale(0);
+    opacity: 0.5;
+    animation: pulse0112 calc(var(--uib-speed) * 1.111) ease-in-out infinite;
+    box-shadow: 0 0 20px rgba(18, 31, 53, 0.3);
+}
+
+.dot-spinner__dot:nth-child(2) {
+    transform: rotate(45deg);
+}
+
+.dot-spinner__dot:nth-child(2)::before {
+    animation-delay: calc(var(--uib-speed) * -0.875);
+}
+
+.dot-spinner__dot:nth-child(3) {
+    transform: rotate(90deg);
+}
+
+.dot-spinner__dot:nth-child(3)::before {
+    animation-delay: calc(var(--uib-speed) * -0.75);
+}
+
+.dot-spinner__dot:nth-child(4) {
+    transform: rotate(135deg);
+}
+
+.dot-spinner__dot:nth-child(4)::before {
+    animation-delay: calc(var(--uib-speed) * -0.625);
+}
+
+.dot-spinner__dot:nth-child(5) {
+    transform: rotate(180deg);
+}
+
+.dot-spinner__dot:nth-child(5)::before {
+    animation-delay: calc(var(--uib-speed) * -0.5);
+}
+
+.dot-spinner__dot:nth-child(6) {
+    transform: rotate(225deg);
+}
+
+.dot-spinner__dot:nth-child(6)::before {
+    animation-delay: calc(var(--uib-speed) * -0.375);
+}
+
+.dot-spinner__dot:nth-child(7) {
+    transform: rotate(270deg);
+}
+
+.dot-spinner__dot:nth-child(7)::before {
+    animation-delay: calc(var(--uib-speed) * -0.25);
+}
+
+.dot-spinner__dot:nth-child(8) {
+    transform: rotate(315deg);
+}
+
+.dot-spinner__dot:nth-child(8)::before {
+    animation-delay: calc(var(--uib-speed) * -0.125);
+}
+
+@keyframes pulse0112 {
+
+    0%,
+    100% {
+        transform: scale(0);
+        opacity: 0.5;
+    }
+
+    50% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+@media(max-width:770px) {
+    img {
+        width: 35%;
+    }
+}

@@ -1,0 +1,58 @@
+body {
+    font-family: Arial, sans-serif;
+    .text-white {
+        background-color: #cd3301;
+        h4{
+            font-weight: bold;
+        }
+    }
+    img{
+        position: sticky;
+        filter: drop-shadow(0px 0px 3px rgba(255, 255, 255, 0.9));
+        top: 2rem;
+        left: 1.4rem;
+        width: 14rem;
+        z-index: 10;
+    }
+    .first{
+        position: absolute;
+        width: 100%;
+        height: 40%;
+        padding-top: 9rem;
+        background-size: cover;
+        background-position: center;
+        top: 13.5rem;
+        .container{
+            position: relative;
+            color: #fff;
+            max-width: 700px;
+            margin-top: 50px;
+            h2{
+                font-weight: 700;
+            }
+            p{
+                font-weight: 500;
+            }
+        }
+    }
+    #vision-mission{
+        margin-top: 10rem;
+    }
+    .section {
+        /* padding: 2em 0; */
+    }
+
+    h2 {
+        margin-bottom: 1rem;
+    }
+
+    .list-unstyled li {
+        display: inline;
+        margin: 0 1rem;
+    }
+
+    .team img {
+        width: 40rem;
+        height: auto;
+    }
+}

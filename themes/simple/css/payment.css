@@ -1,0 +1,40 @@
+form{
+    width: 100%;
+    max-width: 85%;
+    .title{
+        .line{
+            .p{
+                width: 1px;
+                height: 50px;
+                background-color: #cd3301;
+            }
+        }
+        h4{
+            color: #cd3301;
+            font-family: "Roboto", sans-Serif;
+            font-size: 1.3rem;
+        }
+    }
+    .form-group{
+        padding: .5rem;
+        .inputData{
+            width: 100%;
+            box-shadow: none;
+            border: none;
+            border-bottom: 1px solid #707070;
+        }
+        .inputData:focus{
+            outline: none;
+        }
+        #commenter{
+            resize: horizontal;
+        }
+    }
+    button{
+        background-color: #cd3301;
+        color: #fff;
+        border: none;
+        border-radius: 3px;
+        font-family: 'Roboto', sans-serif;
+    }
+}
